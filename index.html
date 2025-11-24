@@ -80,9 +80,30 @@
   <!-- Contact Page -->
   <section id="contact" class="page">
     <h2>Contact Me</h2>
-    <p>Email: your@email.com</p>
-    <p>Instagram: @yourhandle</p>
-    <p>Phone: (000) 000‑0000</p>
+    <p>You can reach me directly using this email form:</p>
+
+    <form action="https://formspree.io/f/yourFormID" method="POST" style="max-width:500px; display:flex; flex-direction:column; gap:15px;">
+      <label>
+        <span>Your Name</span>
+        <input type="text" name="name" required style="padding:10px; border-radius:6px; border:1px solid #00e5ff; background:#0f0f1a; color:#e0e0e0;">
+      </label>
+
+      <label>
+        <span>Your Email</span>
+        <input type="email" name="email" required style="padding:10px; border-radius:6px; border:1px solid #00e5ff; background:#0f0f1a; color:#e0e0e0;">
+      </label>
+
+      <label>
+        <span>Your Message</span>
+        <textarea name="message" rows="5" required style="padding:10px; border-radius:6px; border:1px solid #00e5ff; background:#0f0f1a; color:#e0e0e0;"></textarea>
+      </label>
+
+      <button type="submit" style="padding:12px; background:#00e5ff22; color:#00e5ff; border:1px solid #00e5ff; border-radius:8px; font-weight:bold; cursor:pointer; text-shadow:0 0 6px #00e5ff;">
+        Send Message
+      </button>
+    </form>
+
+    <p style="margin-top:20px; font-size:14px; opacity:0.7;">Replace <code>yourFormID</code> with your Formspree form ID.</p>
   </section>
 
   <footer>
