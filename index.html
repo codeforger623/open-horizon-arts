@@ -5,18 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pencil Art Studio</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f5f5f5; }
-    header { background: #222; color: white; padding: 20px; text-align: center; }
-    nav { background: #333; display: flex; justify-content: center; }
-    nav a { color: white; padding: 14px 20px; text-decoration: none; display: block; }
-    nav a:hover { background: #444; }
-    .page { display: none; padding: 40px; max-width: 900px; margin: auto; }
+    body { font-family: 'Orbitron', sans-serif; margin: 0; background: #0a0a0f; color: #e0e0e0; }
+    header { background: #0f0f1a; color: #00e5ff; padding: 30px; text-align: center; text-shadow: 0 0 10px #00e5ff; }
+    nav { background: #111122; display: flex; justify-content: center; border-bottom: 2px solid #00e5ff; box-shadow: 0 0 10px #00e5ff; }
+    nav a { color: #00e5ff; padding: 14px 20px; text-decoration: none; display: block; font-weight: bold; transition: 0.3s; text-shadow: 0 0 6px #00e5ff; }
+    nav a:hover { background: #00e5ff22; box-shadow: 0 0 12px #00e5ff; }
+    .page { display: none; padding: 40px; max-width: 1000px; margin: auto; }
     .active { display: block; }
-    h1, h2 { color: #222; }
-    .gallery img { width: 200px; margin: 10px; border: 2px solid #ccc; border-radius: 8px; }
-    .packages { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
-    .package { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-    footer { text-align: center; padding: 20px; background: #222; color: white; margin-top: 40px; }
+    h1, h2, h3 { color: #00e5ff; text-shadow: 0 0 8px #00e5ff; }
+    .gallery img { width: 220px; margin: 10px; border: 2px solid #00e5ff; border-radius: 8px; box-shadow: 0 0 15px #00e5ff; }
+    .packages { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 25px; }
+    .package { background: #14141f; padding: 20px; border-radius: 12px; box-shadow: 0 0 15px #00e5ff44; border: 1px solid #00e5ff66; transition: 0.3s; }
+    .package:hover { box-shadow: 0 0 25px #00e5ff; transform: translateY(-5px); }
+    footer { text-align: center; padding: 20px; background: #0f0f1a; color: #00e5ff; text-shadow: 0 0 8px #00e5ff; margin-top: 50px; border-top: 2px solid #00e5ff; }
   </style>
 </head>
 <body>
