@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pencil Art Studio</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f5f5f5; }
+    header { background: #222; color: white; padding: 20px; text-align: center; }
+    nav { background: #333; display: flex; justify-content: center; }
+    nav a { color: white; padding: 14px 20px; text-decoration: none; display: block; }
+    nav a:hover { background: #444; }
+    .page { display: none; padding: 40px; max-width: 900px; margin: auto; }
+    .active { display: block; }
+    h1, h2 { color: #222; }
+    .gallery img { width: 200px; margin: 10px; border: 2px solid #ccc; border-radius: 8px; }
+    .packages { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+    .package { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    footer { text-align: center; padding: 20px; background: #222; color: white; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pencil Art Studio</h1>
+    <p>Hand‑drawn pencil artwork made with passion and precision.</p>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showPage('home')">Home</a>
+    <a href="#" onclick="showPage('about')">About</a>
+    <a href="#" onclick="showPage('preview')">Preview Art</a>
+    <a href="#" onclick="showPage('packages')">Packages</a>
+    <a href="#" onclick="showPage('contact')">Contact</a>
+  </nav>
+
+  <!-- Home Page -->
+  <section id="home" class="page active">
+    <h2>Welcome to Pencil Art Studio</h2>
+    <p>Explore handcrafted pencil pieces, custom portraits, and unique visual creations.</p>
+  </section>
+
+  <!-- About Page -->
+  <section id="about" class="page">
+    <h2>About Me</h2>
+    <p>I create detailed pencil-drawn art, specializing in realistic portraits, logos, posters, and professional‑grade illustrations.</p>
+  </section>
+
+  <!-- Preview Art Page -->
+  <section id="preview" class="page">
+    <h2>Artwork Preview</h2>
+    <div class="gallery">
+      <p>(Insert sample images here)</p>
+    </div>
+  </section>
+
+  <!-- Packages Page -->
+  <section id="packages" class="page">
+    <h2>Packages</h2>
+    <div class="packages">
+      <div class="package">
+        <h3>Logo</h3>
+        <p>Custom pencil‑drawn logo design.</p>
+      </div>
+      <div class="package">
+        <h3>Cover / Poster</h3>
+        <p>High‑quality covers or posters drawn by hand.</p>
+      </div>
+      <div class="package">
+        <h3>Full Art</h3>
+        <p>Detailed full‑scene illustrations.</p>
+      </div>
+      <div class="package">
+        <h3>Professional</h3>
+        <p>Top‑tier, highly detailed, premium pencil art.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Page -->
+  <section id="contact" class="page">
+    <h2>Contact Me</h2>
+    <p>Email: your@email.com</p>
+    <p>Instagram: @yourhandle</p>
+    <p>Phone: (000) 000‑0000</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Pencil Art Studio</p>
+  </footer>
+
+  <script>
+    function showPage(pageId) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById(pageId).classList.add('active');
+    }
+  </script>
+</body>
+</html>
